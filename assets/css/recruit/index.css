@@ -1,0 +1,407 @@
+@font-face {
+  font-family: "Noto Sans JP Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/font/NotoSansCJKJP/NotoSansCJKjp-Regular.woff2") format("woff2"), url("/assets/font/NotoSansCJKJP/NotoSansCJKjp-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans JP Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/font/NotoSansCJKJP/NotoSansCJKjp-Bold.woff2") format("woff2"), url("/assets/font/NotoSansCJKJP/NotoSansCJKjp-Bold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans JP Black";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/font/NotoSansCJKJP/NotoSansCJKjp-Black.woff2") format("woff2"), url("/assets/font/NotoSansCJKJP/NotoSansCJKjp-Black.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans JP Thin";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/font/NotoSansCJKJP/NotoSansCJKjp-Thin.woff2") format("woff2"), url("/assets/font/NotoSansCJKJP/NotoSansCJKjp-Thin.woff") format("woff");
+  font-display: swap;
+}
+main {
+  font-size: 16px;
+  padding: 0;
+  text-align: left;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  color: #333;
+  overflow: hidden;
+}
+
+.header .header__globalNav__inner .list__item--recruit .list__item__top {
+  color: #999999;
+}
+
+.main__heroImage {
+  width: 100%;
+}
+.main__heroImage__forPC {
+  padding: 31px 0 0 0;
+  width: 78%;
+}
+@media screen and (min-width: 768px) {
+  .main__heroImage__forPC {
+    display: flexbox;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__heroImage__forPC {
+    display: none;
+  }
+}
+.main__heroImage__forNonPC {
+  padding: 42px 0 0 0;
+  width: 98%;
+}
+@media screen and (min-width: 768px) {
+  .main__heroImage__forNonPC {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__heroImage__forNonPC {
+    display: flexbox;
+  }
+}
+.main__heroImage__text {
+  width: 24.5%;
+  position: absolute;
+  top: 25vh;
+  left: 50%;
+  translate: middle;
+  height: 100px;
+  text-wrap: nowrap;
+}
+@media screen and (max-width: 767px) {
+  .main__heroImage__text {
+    top: 64px;
+    left: 54%;
+  }
+}
+.main__heroImage__text .heroText {
+  font-family: "Noto Sans JP Bold";
+  font-weight: 700;
+  font-size: 1.2vw;
+  color: #333;
+  text-align: right;
+}
+@media screen and (max-width: 767px) {
+  .main__heroImage__text .heroText {
+    font-size: 4.5vw;
+  }
+}
+
+.main__container {
+  text-align: left;
+  font-family: "Noto Sans JP regular";
+  display: block;
+  width: 100%;
+  max-width: 750px;
+  width: auto;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .main__container {
+    padding: 0 35px 0 35px;
+  }
+}
+.main__container__mainHeader {
+  margin: 0;
+  position: relative;
+}
+.main__container__mainHeader .title {
+  text-align: center;
+  color: #333;
+  font-family: "Noto Sans JP Bold";
+  font-size: 1.9em;
+  letter-spacing: 0.2em;
+  margin: -29px 0 27px 0;
+}
+@media screen and (max-width: 767px) {
+  .main__container__mainHeader .title {
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin: 0 0 48px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__container__mainHeader .title span {
+    display: block;
+  }
+}
+.main__container__mainHeader p {
+  text-align: left;
+  margin-bottom: 40px;
+  font-family: "Noto Sans JP bold";
+  font-size: 0.9em;
+  line-height: 1.95;
+  letter-spacing: 0.1em;
+  color: #333;
+}
+@media screen and (max-width: 767px) {
+  .main__container__mainHeader p {
+    line-height: 1.9;
+    margin-bottom: 38px;
+  }
+}
+.main__container__contents .section__title {
+  color: #333;
+  font-family: "Noto Sans JP Bold";
+  letter-spacing: 0.21em;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+@media screen and (max-width: 767px) {
+  .main__container__contents .section__title {
+    font-size: 16px;
+    letter-spacing: 0.17em;
+    text-wrap: nowrap;
+  }
+}
+.main__container__contents .section__text {
+  color: #333;
+  letter-spacing: 0.16em;
+  line-height: 1.9;
+  font-size: 0.9em;
+  margin: 0 0 30px 0;
+  text-align: justify;
+}
+@media screen and (max-width: 767px) {
+  .main__container__contents .section__text {
+    margin: 0 0 40px 0;
+    font-size: 0.8em;
+    line-height: 2.15;
+  }
+}
+.main__container__contents .section__text--lower1 {
+  color: #333;
+  letter-spacing: 0.02em;
+  line-height: 1.9;
+  font-size: 0.9em;
+  margin: 30px 0 0 0;
+  text-align: justify;
+}
+@media screen and (min-width: 768px) {
+  .main__container__contents .section__text--lower1 span {
+    display: block;
+    padding: 28px 0 0 0;
+  }
+}
+.main__container__contents .section__text--lower2 {
+  color: #333;
+  font-family: "Noto Sans JP Bold";
+  letter-spacing: 0.2em;
+  line-height: 1.9;
+  font-size: 1.5em;
+  margin: 8px 0 70px 0;
+  text-align: justify;
+}
+@media screen and (max-width: 767px) {
+  .main__container__contents .section__text--lower2 {
+    display: none;
+  }
+}
+.main__container__title {
+  margin: 100px 0 0 0;
+  color: #333;
+}
+@media screen and (max-width: 767px) {
+  .main__container__title {
+    margin: 40px 0 0 0;
+  }
+}
+.main__container__title .sub {
+  font-family: "Noto Sans JP Bold";
+  font-size: 0.9em;
+}
+@media screen and (max-width: 767px) {
+  .main__container__title .sub {
+    margin: 0 0 8px 0;
+    text-wrap: nowrap;
+  }
+}
+.main__container__title .eng {
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  font-family: "Noto Sans JP Black";
+  font-size: 3em;
+  margin: -24px 0 24px -5px;
+  padding: -8px 0 0 0;
+}
+@media screen and (max-width: 767px) {
+  .main__container__title .eng {
+    font-size: 2em;
+    line-height: 2.2em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__container__title .eng span {
+    display: block;
+    margin: -38px 0 0 0;
+    text-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__container__title br {
+    display: none;
+  }
+}
+.main__container__subContents {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 50px;
+  width: 100%;
+  justify-content: left;
+  margin: 0 0 -8px 0;
+}
+@media screen and (min-width: 768px) {
+  .main__container__subContents {
+    flex-grow: 2;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__container__subContents {
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+}
+.main__container__subContents .head {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+@media screen and (max-width: 767px) {
+  .main__container__subContents .head__icon {
+    height: 3em;
+  }
+}
+.main__container__subContents .head__title {
+  font-family: "Noto Sans JP Bold";
+  padding: 0 0 0 20px;
+}
+.main__container__subContents .head__title .head__title__sub {
+  font-size: 0.85em;
+}
+.main__container__subContents .head__title .head__title__text {
+  margin: -8px 0 0 0;
+  font-size: 1.5em;
+}
+.main__container__subContents .text {
+  font-size: 0.9em;
+  letter-spacing: normal;
+  text-align: justify;
+  line-height: 1.7;
+  margin: 10px 0 5px 0;
+}
+.main__container__subContents .link {
+  text-align: left;
+  padding: 10px 0 0;
+  position: relative;
+  z-index: 1;
+}
+.main__container__subContents .link a {
+  display: inline-block;
+  font-family: "Noto Sans JP Bold";
+}
+@media screen and (min-width: 768px) {
+  .main__container__subContents .link a {
+    font-size: 16px;
+  }
+  .main__container__subContents .link a:hover:after {
+    animation: icon_arrow 1.5s infinite ease-out;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__container__subContents .link a {
+    font-size: 12px;
+  }
+  .main__container__subContents .link a:active:after {
+    animation: icon_arrow 1.5s infinite ease-out;
+  }
+}
+.main__container__subContents .link a:after {
+  content: "";
+  display: inline-block;
+  border: 2px solid #333;
+  border-left-width: 0;
+  border-top-width: 0;
+  transform: rotate(-45deg);
+  vertical-align: middle;
+  height: 8px;
+  width: 8px;
+}
+@media screen and (min-width: 768px) {
+  .main__container__subContents .link a:after {
+    margin: -4px 0 0 3px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__container__subContents .link a:after {
+    margin: -3px 0 0 3px;
+  }
+}
+.main__photoLinks {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 30px;
+  text-align: left;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  .main__photoLinks {
+    margin-top: 70px;
+  }
+}
+.main__photoLinks__item {
+  flex-wrap: wrap;
+  width: auto;
+  padding: 0 28px 0 28px;
+}
+@media screen and (max-width: 767px) {
+  .main__photoLinks__item {
+    margin-bottom: 40px;
+  }
+}
+.main__photoLinks__item .img {
+  margin: 0 0 6px 0;
+}
+.main__photoLinks__item .title {
+  line-height: 1.8;
+  padding: 0 2% 0 2%;
+  font-size: 0.9em;
+}
+.main__photos {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  flex-direction: row;
+  max-width: 100%;
+  gap: 0;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 150px 0 0 0;
+}
+.main__photos__img {
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .main__photos__img {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__photos__img {
+    width: 50%;
+  }
+}/*# sourceMappingURL=index.css.map */

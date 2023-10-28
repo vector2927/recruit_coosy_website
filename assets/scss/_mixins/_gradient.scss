@@ -1,0 +1,39 @@
+//文字コードはutf-8
+@mixin gradientType2color($start-color, $end-color, $orientation)
+{
+  background: $start-color;
+  @if $orientation == vertical
+  {
+    // vertical
+    background: linear-gradient(to bottom, $start-color 0%, $end-color 100%);
+  }
+  @else if $orientation == horizontal
+  {
+    // horizontal
+    background: linear-gradient(to right, $start-color 0%,$end-color 100%);
+  }
+  @else
+  {
+    // radial
+    background: radial-gradient(ellipse at center, $start-color 0%,$end-color 100%);
+  }
+}
+@mixin gradientType4color($start-color, $half-end-color, $half-start-color, $end-color, $orientation)
+{
+  background: $start-color;
+  @if $orientation == vertical
+  {
+    // vertical
+    background: linear-gradient(to bottom, $start-color 0%, $half-end-color 50%, $half-start-color 51%, $end-color 100%);
+  }
+  @else if $orientation == horizontal
+  {
+    // horizontal
+    background: linear-gradient(to right, $start-color 0%, $half-end-color 50%, $half-start-color 51%, $end-color 100%);
+  }
+  @else
+  {
+    // radial
+    background: radial-gradient(ellipse at center, $start-color 0%, $half-end-color 50%, $half-start-color 51%, $end-color 100%);
+  }
+}

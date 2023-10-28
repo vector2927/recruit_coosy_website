@@ -1,0 +1,364 @@
+//文字コードはutf-8
+//footerPathNav
+.footerPathNav {
+  @include forPc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 132px auto 0;
+    box-sizing: border-box;
+    height: 35px;
+  }
+  @include forNonPc {
+    margin: 72px 35px 0;
+    padding: 10px 0 10px;
+    position: relative;
+  }
+  @include forTb{
+    margin: 72px 35px 0;
+  }
+  &__list {
+    @include forNonPc {
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      font-size: 11px;
+      &:-webkit-scrollbar {
+        height: 10px;
+      }
+      &:-webkit-scrollbar-track {
+        background-color: #FFF;
+      }
+      &:-webkit-scrollbar-thumb {
+        background-color: rgba( 238, 238, 238, 0.8);
+      }
+    }
+    &__item {
+      @include forPc {
+        display: inline-block;
+        font-size: 11px;
+      }
+      @include forNonPc {
+        display: inline-block;
+      }
+      &:not(:last-child):after {
+        content: '/';
+        @include forPc {
+          padding: 0 2px 0 10px;
+          color: #444;
+        }
+        @include forNonPc {
+          position: relative;
+          top: -1px;
+          font-size: 10px;
+          padding: 0 4px 0 8px;
+          color: #d9d9d9;
+        }
+      }
+      &:last-child {
+        @include forPc {
+          @include font-weight-bold;
+        }
+      }
+      a,
+      span{
+        color: #444;
+      }
+    }
+  }
+  &__pageTop {
+    @include forPc {
+      max-width: 1000px;
+    }
+    .link{
+      display: block;
+      color: #cecece;
+      background-image: url(/assets/img/common/ico_pageTop.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      @include forPc {
+        width: 16px;
+        height: 13px;
+        background-size: 16px auto;
+        margin: 11px 0;
+      }
+      @include forNonPc {
+        width: 16px;
+        height: 13px;
+        background-size: 16px auto;
+      }
+    }
+    &__fixed{
+      @include forPc {
+        height: 100%;
+      }
+      .on-fixed & {
+        position: fixed;
+        z-index: 100;
+        @include forPc {
+          bottom: 0;
+          height: 35px;
+        }
+        @include forNonPc {
+          bottom: 10px;
+          right: 20px;
+        }
+      }
+    }
+  }
+    .footerPathNav__pageTop{
+      @include forPc {
+        width: 16px;
+        height: 100%;
+      }
+      @include forNonPc {
+        width: auto;
+        position: absolute;
+        right: -15px;
+        bottom: 10px;
+      }
+    }
+}
+//footer
+.footer {
+  color: #bbb;
+  background: #545454;
+  a {
+    color: #d7d7d7;
+  }
+  &__inner {
+    max-width: 1000px;
+    width: auto;
+    margin: 0 auto;
+    padding: 25px 0 0;
+    font-size: 11px;
+    @include forPc {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  &__sns {
+    max-width: 1000px;
+    width: auto;
+    margin: 0 auto;
+    @include forPc {
+      padding: 25px 40px 0;
+      font-size: 11px;
+      text-align: center;
+    }
+    @include forNonPc {
+      padding: 34px 35px 0 34px;
+    }
+    &__title{
+      display: inline-block;
+      vertical-align: middle;
+      font-family: 'Noto Sans JP Bold';
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    &__list {
+      display: inline-block;
+      vertical-align: middle;
+      @include forPc {
+        margin: 0 0 0 7px;
+      }
+      @include forNonPc {
+        margin: 0 0 0 14px;
+      }
+      .item {
+        display: inline-block;
+        vertical-align: middle;
+        &:nth-of-type(n+2){
+          @include forPc {
+            margin-left: 2px;
+          }
+          @include forNonPc {
+            margin-left: 10px;
+          }
+        }
+        a{
+          display: block;
+          font-size: 0;
+          line-height: 0;
+        }
+        img{
+          width: 26px;
+          height: 26px;
+        }
+      }
+    }
+  } 
+  &__upperNav{
+    @include forPc {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+    }
+    @include forNonPc {
+      margin: 0 35px;
+      padding: 0;
+      border-top: 1px solid #888888;
+    }
+    &__item {
+      @include forPc {
+        width: 25%;
+        text-align: left;
+        vertical-align: middle;
+      }
+      @include forNonPc {
+        padding: 0;
+        border-bottom: 1px solid #888888;
+      }
+      .label,
+      & > a{
+        @include font-weight-bold;
+        color: #ededed;
+        @include forNonPc {
+          display: block;
+          font-size: 14px;
+          padding: 10px 0 10px;
+          position: relative;
+          letter-spacing: 0.08em;
+          cursor: pointer;
+          &:before,
+          &:after{
+            content: "";
+            display: inline-block;
+            transition: all .4s;
+            box-sizing: border-box;
+            position: absolute;
+            right: 6px;
+            width : 9px;
+            height: 2px;
+            background-color: #eeeeee;
+            border-radius: 4px;
+          }
+          &:before{
+            top: 22px;
+            transform: rotate(0deg);
+          }
+          &:after{
+            top: 22px;
+            transform: rotate(90deg);
+          }
+          &.on{
+            &:before{
+              transform: rotate(45deg);
+            }
+            &:after{
+              transform: rotate(135deg);
+            }
+          }
+        }
+      }
+      .label {
+        @include forPc {
+          font-size: 17px;
+          margin-bottom: 1px;
+          pointer-events: none;
+        }
+      }
+      & > a {
+        @include forNonPc {
+          &:before,
+          &:after{
+            display: none;
+          }
+        }
+      }
+      .list {
+        @include forPc {
+          display: block !important;
+          margin: 3px 0 0;
+        }
+        @include forNonPc {
+          display: none;
+          margin: 0 0 15px;
+        }
+        &__item {
+          @include forPc {
+            margin: 0 0 1px;
+          }
+          @include forNonPc {
+            margin: 0 0 2px;
+          }
+          > a {
+            display: block;
+            width: 100%;
+            padding: 6px 9px;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+  &__lower {
+    @include font-weight-bold;
+    @include forPc {
+      max-width: 1258px;
+      display: flex;
+      justify-content: space-between;
+      margin: 4px auto 0;
+      padding: 10px 40px 17px;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+    }
+    @include forNonPc {
+      margin: 48px 20px 0;
+      padding: 0 0 45px;
+    }
+    &__list {
+      @include forNonPc {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .item {
+        display: inline-block;
+        @include forPc {
+          margin: 0;
+          padding: 0 8px 0 6px;
+          line-height: 1.2;
+        }
+        @include forNonPc {
+          margin: 0 0 14px;
+          padding: 0 10px 0 6px;
+          width: 50%;
+          box-sizing: border-box;
+          line-height: 1;
+        }
+        &:first-child{
+          @include forPc {
+            padding-left: 0;
+          }
+        }
+        &:nth-child(2n){
+          @include forNonPc {
+            border-left: 1px solid #bababa;
+          }
+        }
+        &:not(:last-child){
+          @include forPc {
+            border-right: 1px solid #bababa;
+          }
+        }
+        > a {
+          @include forNonPc {
+            font-size: 11px;
+            line-height: 1;
+            letter-spacing: 0.04em;
+            padding: 0 9px 0;
+          }
+        }
+      }
+    }
+    &__copyRight{
+      @include forNonPc {
+        display: block;
+        font-size: 10px;
+        margin: 12px 15px 0;
+      }
+    }
+  }
+}

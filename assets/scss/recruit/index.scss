@@ -1,0 +1,414 @@
+@use "../mixins" as *;
+
+main{
+    font-size : 16px;
+    padding : 0;
+    text-align: left;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    color :#333;
+    overflow: hidden;
+    
+}
+
+.header {
+    .header__globalNav__inner {
+        .list__item--recruit {
+            .list__item__top{
+                color: #999999;
+            }
+        }
+    }
+}
+
+.main__heroImage{
+    
+    width : 100%;
+    &__forPC{
+        padding: 31px 0 0 0;
+        width: 78%;
+                
+        @include forPc{
+            display: flexbox;
+        }
+        @include forNonPc{
+            display: none;
+        }
+    }
+    &__forNonPC{
+        padding: 42px 0 0 0;
+        width: 98%;
+                
+        @include forPc{
+            display: none;
+        }
+        @include forNonPc{
+            display: flexbox;
+        }
+    }
+    &__text{
+        width: 24.5%;
+        position: absolute;
+        top:25vh;
+        left:50%;
+
+        @include forNonPc{
+        top:64px;
+        left:54%;
+        }
+
+        
+        translate: middle;
+        // background-color: #999999;
+        height: 100px;
+        text-wrap: nowrap;
+        
+        .heroText{
+            @include font-weight-bold;
+            font-weight:700;
+            font-size: 1.2vw;
+            color: #333;
+            text-align: right;
+
+            @include forNonPc{
+                font-size: 4.5vw;
+            }
+        }
+    }
+}
+
+.main{
+    &__container{
+        text-align: left;
+        font-family: "Noto Sans JP regular";
+        display: block;
+        width: 100%;
+        max-width: 750px;
+        width: auto;
+        margin: 0 auto;
+    
+        @include forNonPc{
+            padding : 0 35px 0 35px;
+        }
+            
+        &__mainHeader{
+            
+            margin: 0;
+            position: relative;
+            
+            .title {
+                
+                text-align: center;
+                color :#333;
+                @include font-weight-bold;
+                font-size: 1.9em;
+                letter-spacing: 0.2em;
+                margin : -29px 0 27px 0;
+    
+                @include forNonPc{
+                    font-size: 1.5em;
+                    line-height: 1.6;
+                    margin : 0 0 48px 0;
+                }
+
+                span{
+                    @include forNonPc{
+                    display: block;
+                }
+                }
+            }
+    
+            p{
+            text-align: left;
+            margin-bottom: 40px;
+            font-family: "Noto Sans JP bold";
+            font-size: 0.9em ;
+            line-height: 1.95;
+            letter-spacing: 0.1em;
+            color: #333;
+    
+            @include forNonPc {
+                line-height: 1.9;
+                margin-bottom: 38px;
+            }
+            }
+    
+            
+        }
+    
+        &__contents{
+            .section{
+                &__title{
+                    color :#333;
+                    @include font-weight-bold;
+                    letter-spacing: 0.21em;
+                    font-size: 24px;
+                    margin : 0 0 10px 0;
+    
+                    @include forNonPc {
+                        font-size: 16px;
+                        letter-spacing: 0.17em;
+                        text-wrap: nowrap ;
+                    }
+                }
+    
+                &__text{
+                    color :#333;
+                    letter-spacing: 0.16em;
+                    line-height:1.9;
+                    font-size: 0.9em;
+                    margin: 0 0 30px 0;
+                    text-align: justify;
+    
+                    @include forNonPc {
+                        margin: 0 0 40px 0;
+                        font-size: 0.8em;
+                        line-height:2.15;
+                    }
+                }
+    
+                &__text--lower1{
+                    color :#333;
+                    letter-spacing: 0.02em;
+                    line-height:1.9;
+                    font-size: 0.9em;
+                    margin: 30px 0 0 0;
+                    text-align: justify;
+    
+                    span{
+                        @include forPc{
+                            display: block;
+                            padding : 28px 0 0 0;
+                        }
+                    }
+                }
+    
+                &__text--lower2{
+                    color :#333;
+                    @include font-weight-bold;
+                    letter-spacing: 0.2em;
+                    line-height:1.9;
+                    font-size: 1.5em;
+                    margin: 8px 0 70px 0;
+                    text-align: justify;
+    
+                    @include forNonPc {
+                        display: none;
+                    }
+                }
+            }
+        }
+    
+        &__title{
+            margin: 100px 0 0 0;
+            color : #333;
+    
+            @include forNonPc{
+                margin: 40px 0 0 0;
+            }
+    
+            .sub{
+                @include font-weight-bold;
+                font-size: 0.9em;
+                
+                @include forNonPc{
+                    margin: 0 0 8px 0;
+                    text-wrap: nowrap;
+                }
+                
+            }
+    
+            .eng{
+                letter-spacing: -0.05em;
+                font-weight: 600;
+                @include font-weight-black;
+                font-size: 3em;
+                margin : -24px 0 24px -5px;
+                padding : -8px 0 0 0 ;
+                
+                @include forNonPc{
+                    font-size: 2em;
+                    line-height: 2.2em;
+                }
+    
+                span { 
+                    @include forNonPc{
+                        display: block;
+                        margin: -38px 0 0 0;
+                        text-wrap: nowrap;
+                    }
+                }
+                
+            }
+            br {
+                @include forPc{
+                    display: none;
+                }
+            }
+        }
+    
+        &__subContents{
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 50px;
+            width: 100%;
+            justify-content: left;
+            margin : 0 0 -8px 0;
+            
+            @include forPc{
+                flex-grow: 2;
+            }
+            
+            @include forNonPc{
+                flex-grow: 1;
+                flex-wrap: wrap;
+            }
+            .head{
+                display: flex;
+                align-items: center;
+                color:#333;
+                
+                // @include forNonPc{
+                //     margin : 24px 0 12px 0;
+                // }
+                
+                &__icon{
+                    @include forNonPc{
+                        height : 3em;
+                    }
+                }
+                &__title{
+                    @include font-weight-bold;
+                    padding: 0 0 0 20px;
+    
+                    .head__title__sub{
+                        font-size: 0.85em;
+                    }
+    
+                    .head__title__text{
+                        margin: -8px 0 0 0;
+                        font-size: 1.5em;
+                    }
+                }
+            }
+    
+            .text { 
+                font-size: 0.9em;
+                letter-spacing: normal;
+                text-align: justify;
+                line-height: 1.7;
+                margin : 10px 0 5px 0;
+            }
+    
+            .link{
+                text-align: left;
+                padding: 10px 0 0;
+                position: relative;
+                z-index: 1;
+                a{
+                  display: inline-block;
+                  @include font-weight-bold;
+                  @include forPc {
+                    font-size: 16px;
+                    &:hover{
+                      &:after{
+                        animation: icon_arrow 1.5s infinite ease-out;
+                      }
+                    }
+                  }
+                  @include forNonPc {
+                    font-size: 12px;
+                    &:active{
+                      &:after{
+                        animation: icon_arrow 1.5s infinite ease-out;
+                      }
+                    }
+                  }
+                  &:after{
+                    content: '';
+                    display: inline-block;
+                    border: 2px solid #333;
+                    border-left-width: 0;
+                    border-top-width: 0;
+                    transform: rotate(-45deg);
+                    vertical-align: middle;
+                    height: 8px;
+                    width: 8px;
+                    @include forPc {
+                      margin: -4px 0 0 3px;
+                    }
+                    @include forNonPc {
+                      margin: -3px 0 0 3px;
+                    }
+                  }
+                }
+              }
+        }
+    }
+    &__photoLinks{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        padding : 30px;
+        text-align: left;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-sizing: border-box;
+    
+        @include forNonPc{
+            margin-top: 70px;
+        }
+        
+        &__item{
+            flex-wrap: wrap;
+            width: auto;
+            padding: 0 28px 0 28px;
+            
+            @include forNonPc{
+                margin-bottom: 40px;
+            }
+    
+            .img{
+                margin: 0 0 6px 0;
+            }
+    
+            .title{
+                line-height: 1.8;
+                padding : 0 2% 0 2%;
+                font-size: 0.9em;
+            }
+        }
+    }
+    &__photos{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        flex-direction: row;
+        max-width: 100%;
+        gap:0;
+        justify-content: center;
+        
+        box-sizing: border-box;
+        margin: 150px 0 0 0;
+        
+        &__img{
+            height: auto;
+            
+    
+            @include forPc {
+                width: 25%;
+            }
+    
+            @include forNonPc {
+                width: 50%;
+            }
+        }
+        
+    }
+    
+}
+
+
+
+
+

@@ -1,0 +1,21 @@
+//文字コードはutf-8
+// keyframes
+@mixin keyframeAnimation($val...){
+  animation: $val;
+}
+
+@mixin createKeyframes($name){
+  @-webkit-keyframes #{$name}{
+    @content;
+  }
+  @-moz-keyframes #{$name}{
+    @content;
+  }
+  @-ms-keyframes #{$name}{
+    @content;
+  }
+  @keyframes #{$name}{
+    @content;
+  }
+
+}

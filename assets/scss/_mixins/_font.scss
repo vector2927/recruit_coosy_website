@@ -1,0 +1,42 @@
+//文字コードはutf-8
+@font-face {
+  font-family: 'Noto Sans JP Regular';
+  font-style: normal;
+  font-weight: 400;
+  src:url('/assets/font/NotoSansCJKJP/NotoSansCJKjp-Regular.woff2') format('woff2'),
+  url('/assets/font/NotoSansCJKJP/NotoSansCJKjp-Regular.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Sans JP Bold';
+  font-style: normal;
+  font-weight: 700;
+  src:url('/assets/font/NotoSansCJKJP/NotoSansCJKjp-Bold.woff2') format('woff2'),
+  url('/assets/font/NotoSansCJKJP/NotoSansCJKjp-Bold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Sans JP Black';
+  font-style: normal;
+  font-weight: 700;
+  src:url('/assets/font/NotoSansCJKJP/NotoSansCJKjp-Black.woff2') format('woff2'),
+  url('/assets/font/NotoSansCJKJP/NotoSansCJKjp-Black.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Sans JP Thin';
+  font-style: normal;
+  font-weight: 700;
+  src:url('/assets/font/NotoSansCJKJP/NotoSansCJKjp-Thin.woff2') format('woff2'),
+  url('/assets/font/NotoSansCJKJP/NotoSansCJKjp-Thin.woff') format('woff');
+  font-display: swap;
+}
+@mixin font-weight-bold {
+  font-family: 'Noto Sans JP Bold';
+}
+@mixin font-weight-black {
+  font-family: 'Noto Sans JP Black';
+}
+@mixin font-weight-thin {
+  font-family: 'Noto Sans JP Thin';
+}
