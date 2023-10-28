@@ -1,6 +1,14 @@
+<div class="header__globalNav__disclaimer">
+    <p>This is the website created by Soe Min Thu for an assignment given by a japanese company's job interview</p>
+</div>
+
 <header id="header" class="header">
+  
+  
+
   <p class="header__logo"><a href="#"><img src="../assets/img/common/img_site_logo.svg" alt="COOSY" ></a></p>
   <div class="header__globalNav">
+    
     <label for="globalNavOpen" class="header__globalNav__opener">
       <span></span>
       <span></span>
@@ -8,6 +16,9 @@
     </label>
     <input type="checkbox" id="globalNavOpen" class="header__globalNav__checkbox" />
     <div class="header__globalNav__inner">
+
+      
+
       <div class="list__wrap">
         <ul class="list clearfix" id="headerNavs">
           <li class="list__item anmDrop">

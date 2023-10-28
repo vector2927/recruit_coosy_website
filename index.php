@@ -26,7 +26,7 @@
 <body>
   <?php include("include/header.php"); ?>
   <main class="main">
-
+  
     <div class="main__heroImage">
 
       <img class="main__heroImage__forPC" src="../assets/img/recruit/hero_img.png" alt="">

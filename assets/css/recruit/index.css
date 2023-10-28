@@ -404,4 +404,23 @@ main {
   .main__photos__img {
     width: 50%;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+
+.header__globalNav__disclaimer{
+  width: 80vw;
+  margin-inline : auto;
+  display: block;
+  position: absolute;
+  top:10px;
+  color:#c00000;
+  word-wrap:break-word;
+  text-align: right;
+  padding : 10px 30px 10px 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .header__globalNav__disclaimer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */
