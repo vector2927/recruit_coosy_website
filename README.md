@@ -1,6 +1,6 @@
 # recruit_coosy_website
 
-This is the website I have done for an assignment of a japanese company's interview.
+This is the website I have done for a japanese company.
 
 This is just a single page website created using HTML, PHP and SCSS.
 The site is well crafted for SEO optimization too.
